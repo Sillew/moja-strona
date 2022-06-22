@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8bf9f62bee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Indie+Flower&family=Lobster&family=Noto+Serif:wght@700&family=Poppins:wght@300;400;500;700&family=Sansita+Swashed:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        #myCarousel {
+                    padding-top: 2rem;
+                    }
+        .carousel-item {
+            height: 32rem;
+            background-color: white;
+            color: black;
+            position: relative;
+        }
+        .ppp {
+            position: absolute;
+            bottom: 0;
+            left: 0;    
+            right: 0;
+            padding-bottom: 15rem;
+        }
+        .ok {
+            padding-left: 3rem;
+        }
+        .linijka {
+            border: 1px solid black;
+            opacity: 40%;
+            color:black;
+            margin-top: 3rem;
+        }
+        .mapka {
+            border: 1px solid black;
+            border-radius: 10px;
+            
+        }
+        .stopka {
+            height: 3rem;
+            background-color: black;
+            display: flex;
+            justify-content:center;
+            padding-top: 12px;
+            border-radius: 10px;
+        }
+        .stopka:hover {
+            background-color:darkslategrey;
+        }
+        .fotka {
+            border-radius: 10px;
+        }
+        .sentencja {
+            height: 10rem;
+            margin-top: 6rem;
+            text-align: center;
+            font-family: Indie Flower;
+            font-size: 2rem;
+
+        }
+        .fotki {
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid my-3">
+        <nav class="navbar navbar-expand-md navbar-light shadow" style="background-color:white ;">
+            <a href="#" class="navbar-brand px-3"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Poniżej jest w divie collapse zawarty cały pasek manu, z wyjatkiem powyzszego navbar brand-->
+            <div class="collapse navbar-collapse justify-content-center" id="toggleMobileMenu">
+                <ul class="navbar-nav text-center">
+                    <li>
+                        <a class="nav-link" style="font-size:2rem;font-family: Indie Flower;color: black;" href="#">About me</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" style="font-size: 2rem;font-family: Indie Flower;color: black;padding-left: 3rem;" href="#">Store</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" style="font-size: 2rem;font-family: Indie Flower;color: black;padding-left: 3rem;" href="#">Contact</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </nav>
+        <!--Poniżej karuzela z paroma zdjęciami-->
+        <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+            <!--Wskaźniki slajdów na dole-->
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!--Poszczególne slajdy-->
+            <div class="carousel-inner">
+
+                <!--Poniżej slajdy-->
+                <div class="carousel-item active">
+                    <div class="container ppp">
+                        <h1>Przykład pierwszy</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas distinctio rem nostrum quasi expedita deleniti repudiandae, harum quidem assumenda corporis!</p>
+                        <a href="#" class="btn btn-lg btn-primary">Zapisz się dzisiaj !</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container ppp">
+                        <h1>Przykład drugi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas distinctio rem nostrum quasi expedita deleniti repudiandae, harum quidem assumenda corporis!</p>
+                        <a href="#" class="btn btn-lg btn-primary">Subskrypcja !</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center w-100 h-100">
+                        <img  class="fotki" src="farby.jpg" alt="farby">
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Dodawanie znaczników wyboru (lewa i prawa strona)-->
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        
+        </div>
+            <!--Poniżej sentencja-->
+            <div class="sentencja">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem amet natus maxime voluptates itaque, quas explicabo hic eum nam odio?</p>
+            </div>
+    
+        <!--Poniżej sekcja z opisem i zdjęciem-->
+        <div class="container fotki py-5">
+            <div class="row">
+                <div class="image col-md-6">
+                    <p class="lh-lg text-center py-5 fotka" style="font-family:Indie Flower ;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, quasi sed eos officiis doloremque laudantium corporis recusandae amet debitis molestiae quas itaque et ab praesentium deserunt, tenetur vel harum possimus aperiam mollitia! Esse magnam assumenda maxime unde dignissimos numquam dolor!</p>
+                </div>
+                <div class="image col-md-6">
+                    <img class="w-100 fotka" src="farby — kopia.jpg" alt="farby">
+                </div>
+            </div>
+        </div>
+        <!--Poniżej sekcja z opisem i zdjęciem odwrotna kolejność-->
+        <div class="container fotki">
+            <div class="row">
+                <div class="image col-md-6">
+                    <img class="w-100 fotka" src="dog.jpg" alt="pies">
+                </div>
+                <div class="image col-md-6">
+                    <p class="lh-lg text-center py-5 fotka" style="font-family: Bad Script;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, quasi sed eos officiis doloremque laudantium corporis recusandae amet debitis molestiae quas itaque et ab praesentium deserunt, tenetur vel harum possimus aperiam mollitia! Esse magnam assumenda maxime unde dignissimos numquam dolor!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid linijka"></div>
+
+        <!--Poniżej sekcja z namiarami na firmę-->
+        <div class="container fotki py-5">
+            <div class="row">
+                <div class="image col-md-6 mapka">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.458685339328!2d16.91048058719628!3d52.40967124995253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b35310e6bc7%3A0x6c52ec8ad848b343!2sAgawa%20Club!5e0!3m2!1spl!2spl!4v1655802913109!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="image col-md-6">
+                    <p class="lh-lg text-center" style="padding-top: 7rem;"><a><i class="fa-solid fa-hand-point-left"></i></a> <br>Adres firmy - i jak nas znaleść :)</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Stopka-->
+        <div class="stopka">
+            
+                <a><i class="fa-brands fa-facebook" style="color: white;"> Facebook -follow me !</i></a>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
